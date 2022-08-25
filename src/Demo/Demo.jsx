@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 
 const DemoOutput = (props) => {
   console.log(`demo paragraph`)
@@ -6,4 +6,4 @@ const DemoOutput = (props) => {
   return <p>{props.show ? 'New p' : ''}</p>
 }
 
-export default DemoOutput
+export default memo(DemoOutput)
